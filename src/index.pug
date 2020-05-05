@@ -143,14 +143,20 @@ html(lang="en")
           polygon(points="0,100 1000,100 1000,0")
 
       .reviews
-        .reviews__img
-          +image("content/budda.jpg", "reviews__pic")
+        .reviews__section
+          .reviews-info
+            p.reviews-info__desc Что обо мне говорят
+          .reviews-contact
+            p.reviews-contact__info Связаться со мной
 
       footer.footer
         .container.footer__container
           .footer__top
             .footer__logo
               .logo &copy; 2019
+            .footer__user-info.user-info
+              p.footer__user-info__username.user-info__username Владимир Астаханов
+              p.footer__user-info__desc.user-info__desc Личный сайт веб разработчика
             .footer__links 
               nav.nav
                 - var menu = ['Главная', "Обо мне", "Навыки", "Работы", "Отзывы", "Связатся"]
