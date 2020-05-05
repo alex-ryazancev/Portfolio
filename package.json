@@ -1,7 +1,7 @@
 {
-  "name": "ls-advanced-boilerplate",
+  "name": "Alexey",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode=development --hot",
@@ -9,8 +9,8 @@
     "reg": "node reg-util.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "y",
+  "license": "y",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
@@ -52,10 +52,12 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "promptly": "^3.0.3",
-    "pug": "^2.0.3",
+    "pug": "^2.0.4",
     "request": "^2.88.0",
     "signale": "^1.4.0",
     "vue": "^2.6.7",
     "vue-router": "^3.0.2"
-  }
+  },
+  "repository": "https://github.com/alex-ryazancev/Portfolio.git",
+  "private": true
 }
