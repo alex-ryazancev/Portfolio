@@ -1,0 +1,120 @@
+.parallax-footer { 
+    background: url("~images/bg/budda.jpg") no-repeat;
+    width: 100%; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+    z-index: -1;
+
+    &__item {
+        min-width: 100%; 
+        min-height: i00%; 
+        background-position: 50% 0;
+        background-position: 50% 50%;
+        //background-size: cover;
+        position: absolute; 
+        left: 0; 
+        top: 0;
+        transform: translateX(0) translateZ(0); 
+        
+        &_1 {
+            background-image: url('~images/parallax/pf1.png'); 
+            z-index: 1;
+        }
+        &_2  {
+            background-image: url('~images/parallax/pf2.png'); 
+            z-index: 2;
+        }
+        &_3  {
+            background-image: url('~images/parallax/pf3.png'); 
+            z-index: 3;
+        }
+        &_4  {
+            background-image: url('~images/parallax/pf4.png');  
+            z-index: 4;
+        }
+        &_5  {
+            background-image: url('~images/parallax/pf5.png');
+            z-index: 5; 
+        }    
+    }
+}
+
+/* .parallax-footer {
+  width: 100%; 
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  height: 100%; 
+  
+    @include super-wide {
+      display: none;
+    }
+  
+    @include tablets {
+      display: none;
+    }
+  }
+  
+  .parallax-footer__layer {
+    min-width: 100%; 
+    min-height: i00%; 
+    background-position: 50% 0;
+    background-position: 50% 50%;
+    //background-size: cover;
+    position: absolute; 
+    left: 0; 
+    bottom: 300px;
+    //transform: translateX(0) translateZ(0); 
+    &:nth-child(1) {
+      display: block;
+      .parallax-footer__image {
+        object-fit: cover;
+        bottom: 300px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &:nth-child(2) {
+     // transform: translateZ(-50px) scale(1.5);
+      display: block;
+      .parallax-footer__image {
+        bottom: 300px;
+        right: 0;
+        width: 100%;
+      }
+    }
+    &:nth-child(3) {
+      //transform: translateZ(-100px) scale(2);
+      display: block;
+      .parallax-footer__image {
+        bottom: 300px;
+        left: 50%;
+        transform: translateX(367px);
+      }
+    }
+    &:nth-child(4) {
+      //transform: translateZ(-150px) scale(2.5);
+      display: block;
+      .parallax-footer__image {
+        left: 0;
+        width: 100%;
+        bottom: 300px;
+      }
+    }
+    &:nth-child(5) {
+      //transform: translateZ(-200px) scale(3);
+      display: block;
+      .parallax-footer__image {
+        left: 0;
+        bottom: 300px;
+      }
+    }
+  }
+  
+  .parallax-footer__image {
+    max-width: initial;
+    max-height: initial;
+    position: absolute;
+  } */

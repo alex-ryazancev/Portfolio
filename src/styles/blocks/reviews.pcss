@@ -1,97 +1,94 @@
-.reviews {
-    padding-top: 200px;
-    background: url("../images/content/budda.jpg") no-repeat;
-    background-size: cover;
+.reviews__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 95px;
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 33px;
+  }
 }
 
-.reviews__section {
-
+.reviews__title.section-title {
+  margin-bottom: 0;
+  margin-right: 10%;
+  @include phones {
+    margin-right: 0%;
+    margin-bottom: 25px;
+  }
 }
 
-.reviews-info__desc {
-    /* margin-top: 100px; */
+.reviews__buttons {
+  display: flex;
 }
 
-.reviews__info-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0 100px 100px 0;
-}
-
-.reviews-buttons__item {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid;
-    margin-right: 30px;
-    background-color: none;
-}
-
-.reviews-buttons__icon-prev,
-.reviews-buttons__icon-next {
-    height: 8px;
-}
-
-.reviews-buttons__item--slide--prev {
-    transform: rotate(180deg);
-    margin-bottom: 5px;
-}
-
-.reviews__item,
-.reviews__info {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+.reviews__btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid currentColor;
+  background-color: rgba(0, 0, 0, 0.0);
+  position: relative;
+  border-radius: 50%;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: svg-load('arrow-down.svg', fill=$text-color) center center / contain no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s, margin-top .3s;
+    opacity: 1;
+  }
+  &_prev {
+    &:before {
+      transform: translate(-50%, -50%) rotate(-180deg);
+    }
+  }
+  &:hover {
+    border: #5500f1;
+    background: #5500f1;
+    &:before {
+      background: svg-load('arrow-down.svg', fill=#fff) center center / contain no-repeat;
+    }
+  } 
 }
 
 .reviews__content {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+  overflow: hidden;
 }
 
-.reviews__link-icon {
-    height: 75px;
-    width: 65px;
-    fill: #464d62;
-    opacity: .1;
+.reviews__content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  will-change: transform;
+  transition: transform .3s;
+
+  @include tablets {
+    margin-left: 0;
+  }
+  @include phones {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
-.reviews__link {
-    margin: 0 15px 0 50px;
-}
+.reviews__content-item {
+  flex-shrink: 0;
+  padding-right: 30px;
+  width: 50%;
 
-.reviews__item {
-    display: flex;
-    max-width: 950px;
-
-}
-
-.reviews__avatar {
-    width: 100px;
-}
-
-.reviews-about__title {
-    font-size: 18px;
-    min-width: 200px;
-}
-
-.reviews-about__prolog {
-    font-size: 16px;
-}
-
-.reviews__about-left {
-    margin-right: 50px;
-}
-
-.reviews__text {
-    margin-bottom: 50px;
-}
-
-.reviews__about {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: baseline;
-    align-content: flex-start;
+  @include phones {
+    margin-right: 0;
+    width: 100%;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }

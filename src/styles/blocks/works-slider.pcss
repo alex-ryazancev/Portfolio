@@ -12,14 +12,14 @@
   width: 66%;
   position: relative;
   z-index: 10;
-  height: 484px;
+  height: 340px;
 
   @include tablets {
     margin-bottom: 105px;
     width: 86%;
   }
   &:before {
-    content: "4";
+    content: attr(data-slide);
     position: absolute;
     top: 50%;
     transform: translateY(-60%);
@@ -84,7 +84,7 @@
   transition: .2s;
   &.active,
   &:hover {
-    outline: 3px solid #f29400;
+    outline: 3px solid #5500f1;
   }
 }
 
@@ -126,6 +126,7 @@
     opacity: .3;
   }
   &:hover {
+    background: #5500f1;
     &:before {
       opacity: 1;
     }
@@ -228,9 +229,4 @@
 
 .fade-leave-to {
   opacity: 0;
-}
-
-.works__desc-text {
-color: rgb(70,77,98);
-font-weight: bold;
 }

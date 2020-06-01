@@ -1,7 +1,7 @@
 {
   "name": "Alexey",
   "version": "1.0.0",
-  "description": "Portfolio",
+  "description": "> Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/), а так же  [последняя версия Yarn](https://yarnpkg.com/ru/docs/install)",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode=development --hot",
@@ -9,14 +9,12 @@
     "reg": "node reg-util.js"
   },
   "keywords": [],
-  "author": "y",
-  "license": "y",
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.3.3",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
-    "acorn": "^6.0.5",
-    "acorn-dynamic-import": "^4.0.0",
     "autoprefixer": "^9.4.8",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
@@ -41,6 +39,7 @@
     "svgo-loader": "^2.2.0",
     "terser-webpack-plugin": "^1.2.3",
     "vue-loader": "^15.6.4",
+    "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.7",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
@@ -52,12 +51,15 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "promptly": "^3.0.3",
-    "pug": "^2.0.4",
+    "pug": "^2.0.3",
     "request": "^2.88.0",
     "signale": "^1.4.0",
     "vue": "^2.6.7",
+    "vue-flickity": "^1.2.1",
     "vue-router": "^3.0.2"
   },
-  "repository": "https://github.com/alex-ryazancev/Portfolio.git",
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "Portfolio"
+  }
 }
